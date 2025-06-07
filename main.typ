@@ -4,6 +4,11 @@
 #generateAll()
 
 #for questNumber in range(1, 44) {
-	include "questions/question" + str(questNumber) + ".typ"
+	if (questNumber < 10) {
+		include "questions/question0" + str(questNumber) + ".typ"
+	}
+	else {
+		include "questions/question" + str(questNumber) + ".typ"
+	}
 	pagebreak()
 }
