@@ -3,6 +3,7 @@
 #set heading(numbering: "1.1")
 #generateAll()
 
-= Раздел 1 (если есть)
-#include "questions/question1.typ"
-#pagebreak()
+#for questNumber in range(1, 44) {
+	include "questions/question" + str(questNumber) + ".typ"
+	pagebreak()
+}
