@@ -9,4 +9,4 @@ $n$ предметов распределяются в $k$ различных я
 $ 1 space 2 space dots space n $
 $ k dot k dot dots dot k = k $
 
-#image("../images/09_01.png")
+#image("../images/07_01.png")
