@@ -4,9 +4,9 @@
 
 $n$ предметов распределяются в $k$ различных ящиков. 
 
-#image("../images/09_01.png")
-
 По правилу распредление это будет 
 
 $ 1 space 2 space dots space n $
 $ k dot k dot dots dot k = k $
+
+#image("../images/09_01.png")
