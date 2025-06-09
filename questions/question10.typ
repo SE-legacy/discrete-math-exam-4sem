@@ -7,7 +7,7 @@ $
 2 space 1 space 3 dots n underbrace(| space | dots |, k - 1) #[--- другая перестановка!]
 $
 
-$ overline(P) (underbrace(1\, 1\, 1\, dots\, 1, k), k - 1) = ((n+k+1!))/(k-1)! = #h(5pt) A_(n + 1 - 1)^n  #[#h(-38pt) #circle(radius: 20pt)] $ 
+$ overline(P) (underbrace(1\, 1\, 1\, dots\, 1, n), k - 1) = ((n + k - 1)!)/(k - 1)! = #h(5pt) A_(n + k - 1)^n  #[#h(-38pt) #circle(radius: 20pt)] $ 
 
 
 Следствие: нет пустых ящиков
