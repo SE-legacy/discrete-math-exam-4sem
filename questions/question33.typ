@@ -73,14 +73,21 @@ $m lt.eq$ число ребер в $underbrace(#[максимально план
 
 === Следствие 4
 
-В каждом триангуляция $exists v$ степ $k$-ой $lt.eq 5$
+В каждом триангуляция $exists v$ степень которой $lt.eq 5$
+
+*Доказательство*
 
 $
-3r = 2 m space space space r = (2m)/3\
-m = 1/2 limits(sum)_(i = 1)^(n) alpha (v_i)
+3r = 2 m => r = (2m)/3\
 $
 
 $
-2 = n - m + r = n - m + (2 m)/3 = n - 1/3 m = n - 1/6 limits(sum)_(i = 1)^n alpha (v_i) =\
-= 1/6 limits(sum)_(i = 1)^n (6 - alpha (v_i)); space space exists 
-$// TODO: дописать 4 следствие
+2 = n - m + r = n - m + (2 m)/3 = n - 1/3 m
+$
+
+По лемме о рукопожатии:
+
+$
+limits(sum)_(i) d (V_i) = 2 m => limits(sum)_(i = 1)^n 1 - 1/6 limits(sum)_(i = 1)^n (6 - d (V_i)) = 2 =>\
+=> limits(sum)_(i = 1)^n (6 - d (V_i)) gt.eq 12 => 6 - d (V_i) gt 0 => d (V_i) lt 6
+$
