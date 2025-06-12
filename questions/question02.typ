@@ -8,6 +8,7 @@ $ P_n = n! $
 / Количество перестановок с повторениями: $ overline(P)(n_1, dots, n_k) = ((n_1 + n_2 + ... + n_k)!)/(n_1! n_2! ... n_k!) = ((sum_(i = 1)^k n_i)!)/(product_(i = 1)^k n_i !) $
 
 
+*Пояснение к формуле:*
 $ underbrace(a a dots a, n_1 ! \ <---->) , space underbrace(b dots b, n_2 ! \ <---->), dots,  underbrace(x dots x, n_k ! \ <---->)  dot n! $
 // TODO: там в конце не просто n! а n!/что-то. в 37 строке
 $ n_1 ! n_2 ! ... n_k $
