@@ -1,14 +1,9 @@
 = Производящая функция. Сумма производящих функций, операция подстановки.
 == Производящая функция
-/ Производящая функция: $a_0, a_1, a_2, dots, a_n, dots$ производящая последовательность чисел. Производящей функцие (ПФ) для этой последовательности
+/ Производящей функцией для последовательности ${a_n}$: называется
 
 $
 	a_0 + a_1 t + a_2 t^2 + dots + a_n t^n + dots = underbracket(limits(sum)^infinity_(n = 0) a_n t^n, #[открытая форма ПФ])
-$
-
-$
-	{a_n} space A(t) = limits(sum)^infinity_(n = 0) a_n t^n\
-	A(t) space A(0) = a_0
 $
 
 === Пример
@@ -58,4 +53,4 @@ $ c_2 = a_1 + b_2 + a_2 b_1^2 $
 
 === Пример
 1. $ B(t) = - t, space A(- t) = a_0 - a_1 t + a_2 t^2 - dots = limits(sum)_(n = 0)^infinity (-1)^n a_n t^n $
-2. $ c t, space A(c t) = a_0 + a_1 c t + a_2 c^2 t^2 + dots = limits(sum)_(n = 0)^infinity c^n a_n t^n $
+2. $ B(t) = c t, space A(c t) = a_0 + a_1 c t + a_2 c^2 t^2 + dots = limits(sum)_(n = 0)^infinity c^n a_n t^n $
