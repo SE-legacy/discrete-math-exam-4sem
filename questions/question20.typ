@@ -22,7 +22,7 @@ $
 
 $
 Q(t) A(t) = (1 - c_1 t - c_2 t^2 - dots - c_k t^k)(a_0 + a_1 t + a_2 t^2 + dots + a_n t^n) =\
-= underbrace(b_0 + b_1 t + b_2 t^2 + dots + b_(k - 1) t^(k - 1) + b_k t^k, = P(t)) + underbrace(overbrace(b_k, = 0) t^k + overbrace(b_(k + 1), = 0) t^(k + 1) + dots, = 0)
+= underbrace(b_0 + b_1 t + b_2 t^2 + dots + b_(k - 1) t^(k - 1), = P(t)) + underbrace(overbrace(b_k, = 0) t^k + overbrace(b_(k + 1), = 0) t^(k + 1) + dots, = 0)
 $
 
 $
