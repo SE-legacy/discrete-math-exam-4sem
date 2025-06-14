@@ -1,7 +1,7 @@
 = Сколькими способами можно положить $n$ различных предметов в $k$ ящиков, если не должно быть пустых ящиков?
 $n$ различных предметов распределяются в $k$ различных ящиков. Распределить так, чтобы не было пустых ящиков.
 
-$ A_1, A_2, dots A_k $
+$ A_1, A_2, dots, A_k $
 
 $A_i$ --- исход с $i$-ым ящиком будучи пустым.
 
@@ -13,6 +13,5 @@ $ k^n - C^1_k dot (k - 1)^n + C^2_k dot (k - 2)^n - C_k^3 (k - 3)^n + dots + (- 
 Воспользуемся формулой включения-исключения. Тогда количество способов выполнить нужное распределение:
 
 $
-|A \ limits(union.big)_(i = 1)^k A_i| = |A| - limits(sum)_(i = 1)^k |A_i| + limits(sum)_(1 lt.eq i_1 lt.eq i_2 lt.eq k) |A_(i_1) inter A_(i_2)| + dots +\
-+ (-1)^(k - 1) limits(sum)_(1 lt.eq i_1 lt.eq dots lt.eq i_(k - 1) lt.eq k) |A_(i_1) inter dots inter A_(i_k)| = k^n - C^1_k dot (k - 1)^n + C^2_k dot (k - 2)^n - C_k^3 (k - 3)^n + dots + (-1)^(k - 1) dot C^(k - 1)_k dot 1^n
+|A backslash limits(union.big)_(i = 1)^k A_i| = |A| - limits(sum)_(i = 1)^k |A_i| + limits(sum)_(1 lt.eq i_1 lt.eq i_2 lt.eq k) |A_(i_1) inter A_(i_2)| + dots + (-1)^(k - 1) limits(sum)_(1 lt.eq i_1 lt.eq dots lt.eq i_(k - 1) lt.eq k) |A_(i_1) inter dots inter A_(i_k)| =\ = k^n - C^1_k dot (k - 1)^n + C^2_k dot (k - 2)^n - C_k^3 (k - 3)^n + dots + (-1)^(k - 1) dot C^(k - 1)_k dot 1^n
 $
