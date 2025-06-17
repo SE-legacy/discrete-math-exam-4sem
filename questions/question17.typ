@@ -48,8 +48,8 @@ $
 $ c_0 + c_1 t + c_2 t^2 + dots $
 $ c_0 = a_0 $
 $ c(t) = a_0 + a_1 (b_1 t + b_2 t^2 + dots) + a_2 (b_1 t + b_2 t^2 + dots)^2 + dots $
-$ c_1 = a_1 + b_1 $
-$ c_2 = a_1 + b_2 + a_2 b_1^2 $
+$ c_1 = a_1  b_1 $
+$ c_2 = a_1  b_2 + a_2 b_1 $
 
 === Пример
 1. $ B(t) = - t, space A(- t) = a_0 - a_1 t + a_2 t^2 - dots = limits(sum)_(n = 0)^infinity (-1)^n a_n t^n $
