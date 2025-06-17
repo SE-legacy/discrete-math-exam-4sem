@@ -23,7 +23,7 @@ $
 
 Пусть теперь $phi(alpha(u)) = beta(phi(u)) space forall u in U$. Докажем $(u_1, u_2) in alpha space <=> space (phi(u_1), phi(u_2)) in beta$.
 
-Если $(u_1, u_2) in alpha$, то $u_1 in alpha(u_1)$, откуда $phi(u_2) in phi(alpha(u_1)) = beta(phi(u_1))$ и значит $(phi(u_1), phi(u_2)) in beta$.
+Если $(u_1, u_2) in alpha$, то $u_2 in alpha(u_1)$, откуда $phi(u_2) in phi(alpha(u_1)) = beta(phi(u_1))$ и значит $(phi(u_1), phi(u_2)) in beta$.
 
 С другой стороны, если $(phi(u_1), phi(u_2)) in beta$, то $phi(u_2) in beta(phi(u_1)) = phi(alpha(u))$, откуда $u_2 in alpha(u_1)$, т.е. $(u_1, u_2) in alpha$.
 
