@@ -1,8 +1,7 @@
 = Формула включения-исключения.
-Пусть $A$ --- конечное непустое множество, $A_1, dots, A_n$ --- система подмножеств $A$: 
-$ A_i subset.eq A space i = overline(1\, dots\, n) $
+Пусть $A$ --- конечное непустое множество, $A_1, A_2, ..., A_n subset.eq A$ --- система подмножеств $A$.
 
-Тогда:   
+Тогда:
 
 $
 |A \\ limits(union.big)_(i = 1)^n A_i| = |A| - limits(sum)_(i = 1)^n |A_i| + limits(sum)_(1 lt.eq i_1 lt.eq i_2 lt.eq n) |A_(i_1) inter A_(i_2)| + dots + \
