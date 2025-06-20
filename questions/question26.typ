@@ -27,6 +27,6 @@ $
 
 С другой стороны, если $(phi(u_1), phi(u_2)) in beta$, то $phi(u_2) in beta(phi(u_1)) = phi(alpha(u_1))$, откуда $u_2 in alpha(u_1)$, т.е. $(u_1, u_2) in alpha$.
 
-Таким образом $forall u_1, u_2 in U$ истина эквивалентность $(u_1, u_2) in alpha <=> (phi(u_1), phi(u_2)) in beta$, и, следовательно $phi$ --- изоморфизм.
+Таким образом для $forall u_1, u_2 in U$ истина эквивалентность $(u_1, u_2) in alpha <=> (phi(u_1), phi(u_2)) in beta$, и, следовательно $phi$ --- изоморфизм.
 
 Тождественное равенство $phi(alpha(u)) = beta(phi(u))$ равносильно равенству $alpha phi = phi beta$ для отношени $alpha subset.eq U times U$ и $beta subset.eq V times V$, $phi subset.eq U times V$ в матричной форме имеющему вид $A Phi = Phi B$.
