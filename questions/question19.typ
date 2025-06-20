@@ -19,7 +19,7 @@ $
 	= 1
 	$
 
-2. (\*) $m lt.eq k space $ $ space 1/(1 - a x) = 1 + a x + a^2 x^2 + a^3 x^3 + dots + a^n x^n + dots$ верно
+2. (\*) $m = k: space $ $ space 1/(1 - a x) = 1 + C^1_(k+1) a x + C^2_(k+2) a^2 x^2 + C^3_(k+3) a^3 x^3 + dots + C^n_(k+n) a^n x^n + dots$ --- верно
 
 3.
 	$
@@ -38,5 +38,5 @@ $
 	так как
 
 	$
-	C^n_k = C^(n - 1)_(k - 1) + C^n_(k - 1) -> C^n_k - C^(n - 1)_(k - 1) = C^n_(k - 1) 
+	C^n_k = C^(n - 1)_(k - 1) + C^n_(k - 1) -> C^n_k - C^(n - 1)_(k - 1) = C^n_(k - 1)
 	$
