@@ -17,6 +17,6 @@
 #image("../images/22_03.png")
 
 == Соединение графов
-$ G_1 + G_1 := (V_1 union V_2 , alpha_1 union alpha_2 union V_1 times V_2 union V_2 times V_1)$
+$ G_1 + G_2 := (V_1 union V_2 , alpha_1 union alpha_2 union V_1 times V_2 union V_2 times V_1)$
 
 #image("../images/22_04.png")
