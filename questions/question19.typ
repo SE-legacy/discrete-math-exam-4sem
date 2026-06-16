@@ -1,42 +1,66 @@
-= Теорема о разложении функции  $1/(1- a x)^m$.
-$forall n$ натурального имеет место разложение
+= Произведение и деление производящих функций.
+== Произведение производящих функций
+/ Произведение производящих функций: $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$ 
+
+$ C(t) = A(t) dot B(t) = c_0 + c_1 t + dots + c_n t^n + dots = limits(sum)^(infinity)_(n = 0) c_n t^n $
+
+где
 
 $
-1/(1 - a x)^m = 1 + C_m^1 a x + C_(m + 1)^2 a^2 x^2 + C_(m + 2)^3 a^3 x^3 + dots + C_(m + n - 1)^n a^n x^n + dots
+c_0 = a_0 dot b_0\
+c_1 = a_0 dot b_1 + a_1 dot b_0\
+c_2 = a_0 dot b_2 + a_1 dot b_1 + a_2 dot b_0\
+dots dots dots\
+c_n = a_0 dot b_n + a_1 b_(n - 1) + a_2 b_(n- 2) + dots + a_n b_0\
+dots
 $
 
-*Доказательство* Докажем по индукции по $m$
-1.
-	$ m = 1 $
-	$
-	1/(1 - a x) = 1 + a x + a^2 x^2 + a^3 x^3 + dots + a^n x^n + dots
-	$
+$
+(a_0 + a_1 t + a_2 t^2 + dots) (b_0 + b_1 t + b_2 t^2 + dots) = c_0 + c_1 t + c_2 t^2 + dots
+$
 
+=== Пример
 
-	$
-	1 = (1 - a x)(1 + a x + a^2 x^2 + a^3 x^3 + dots + a^n x^n + dots) =\
-	= (1 + a x + a^2 x^2 + a^3 x^3 + dots + a^n x^n + dots) - a x(1 + a x + a^2 x^2 + a^3 x^3 + dots + a^n x^n + dots)=\
-	= 1
-	$
+$
+B(t) = t^m = 0 + 0 dot t + dot + 1 dot t^m + 0 t^(m + 1)\
 
-2. (\*) $m = k: space $ $ space 1/(1 - a x) = 1 + C^1_(k+1) a x + C^2_(k+2) a^2 x^2 + C^3_(k+3) a^3 x^3 + dots + C^n_(k+n) a^n x^n + dots$ --- верно
+underbrace(0\, 0\, dots\, 0\,, m) 1, 0, 0, dots
+$
 
-3.
-	$
-	m = k + 1 \
-	underbrace(frac(1, (1 - a x)^(k + 1)), #[закр. форма]) = underbrace(1 + C_(k + 1)^n a x + C_(k + 2)^2 a^2 x^2 + dots + C_(k + n)^n a^n x^n + dots, #[откр. форма])
-	$
+$
+{a_n} A(t) = a_0 + a_1 t + dots + a_n t^n + dots
+$
 
-	Мы считаем верным утверждение для $m <= k$ и берём его за предположение индукции, теперь нужно доказать справедливость случая $m = k + 1$.
+$
+t^m dot A(t) = a_0 t^m + a_1 t^(m + 1) + dots + a_n t^(n + m) + dot =\
+= limits(sum)_(n = 0)^infinity a_n t^(n + m) = limits(sum)_(n = m)^infinity a_(n - m) t^n
+$
 
-	$
-	underbracket(1/(1 - a x)^k,#[закрытая форма]) = (1 - a x) dot underbracket(1/(1 - a x)^(k + 1),#[закрытая форма]) #[ верное равенство]
-	$
+$
+t^m dot A(t)\
+underbrace(0\, 0\, dots\, 0\,, m) a_0, a_1, a_2, dots
+$
 
-	$ (1 - a x) dot 1/ (1 - a x)^(k + 1)= \ = (1 - a x) (1 + C_(k + 1)^1 a x + C_(k + 2)^2 a^2 x^2 + ... + C_(k + n - 1)^(n - 1) a^(n - 1) x^(n - 1) + C_(k + n)^n a^n x^n +...)= \ = (1 + C_(k + 1)^1 a x + C_(k + 2)^2 a^2 x^2 + ... +C_(k + n - 1)^(n - 1) a^(n - 1) x^(n - 1) + C_(k + n)^n a^n x^n + ...) - \ - (a x + C_(k + 1)^1 a^2 x^2 + C_(k + 2)^2 a^3 x^3 + ... + C_(k + n - 1)^(n - 1) a^n x^n + ...) = \ = 1 + (C_(k + 1)^1 - 1) a x + (C_(k + 2)^2 - C_(k + 1)^1) a^2 x^2 + ... + (C_(k + n)^n - C_(k + n - 1)^(n - 1)) a^n x^n + ... = \ = 1 + C_k^1 a x + C_(k + 1)^2 a^2 x^2 + ... + C_(k + n - 1)^n a^n x^n + ... = 1/(1 - a x)^k $
+$
+A(t) dot B(t) = B(t) dot A(t)\
+(A(t) dot B(t)) dot C(t) = A(t) dot (B(t) dot C(t))\
+A(t) dot (B(t) + C(t)) = A(t) B(t) + A(t) C(t)
+$
 
-	так как
+== Деление производящих функций
+/ Деление производящих функций: Пусть $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$, $B(0) = b_0 eq.not 0$ частным $A(t)$ и $B(t)$ называется $C(t) = (A(t))/(B(t)) space : space A(t) = B(t) C(t)$.
 
-	$
-	C^n_k = C^(n - 1)_(k - 1) + C^n_(k - 1) -> C^n_k - C^(n - 1)_(k - 1) = C^n_(k - 1)
-	$
+== Пример
+
+$ A(t) = 1 {1, 0, 0, 0, dots} = {a_0, a_1, a_2, dots} $
+
+$ B(t) = 1 - t {1, - 1, 0, 0, dots} = {b_0, b_1, b_2, dots} $
+
+$1/(1 - t)$ --- производящая функция в закрытой форме.
+
+$1/(1 - t) = c_0 + c_1 t + c_2 t^2 + dots$ --- в открытой форме
+
+$ c_0 = (a_0)/(b_0) = 1 $
+$ c_1 = (a_1 - b_1 c_0)/(b_1) = (0 - (-1) 1)/(1) = 1 $
+$ dots $
+$ 1/(1 - t) = 1 + t + t^2 + dots = limits(sum)^(infinity)_(n = 0) t^n #[ --- в откртыой форме] $

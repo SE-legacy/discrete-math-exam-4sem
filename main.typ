@@ -3,7 +3,7 @@
 #set heading(numbering: "1.1")
 #generateAll()
 
-#for questNumber in range(1, 45) {
+#for questNumber in range(1, 46) {
 	if (questNumber < 10) {
 		include "questions/question0" + str(questNumber) + ".typ"
 	}
