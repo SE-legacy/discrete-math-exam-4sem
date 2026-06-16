@@ -53,7 +53,7 @@ $
 *Подставим в формулу включений-исключений:*
 
 $
-  |A \\ limits(union.big)_(i = 1)^k A_i| = |A_i| - C_k^1 product_(i=1)^s overline(P)(n_i, k - 2) + C_k^2 product_(i=1)^s overline(P)(n_i, k - 3) + \ + ... + (-1)^(k-1) C_k^(k-1) product_(i=1)^s overline(P)(n_i, 0) + (-1)^k
+  |A \\ limits(union.big)_(i = 1)^k A_i| = |A| - C_k^1 product_(i=1)^s overline(P)(n_i, k - 2) + C_k^2 product_(i=1)^s overline(P)(n_i, k - 3) + \ + ... + (-1)^(k-1) C_k^(k-1) product_(i=1)^s overline(P)(n_i, 0) + (-1)^k
 $
 
 *Подставим вместо перестановок сочетания:*
