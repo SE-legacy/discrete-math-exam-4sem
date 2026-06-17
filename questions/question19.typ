@@ -1,6 +1,6 @@
 = Произведение и деление производящих функций.
 == Произведение производящих функций
-/ Произведение производящих функций: $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$ 
+/ Произведением производящих функций: $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$ назовем производящую функцию
 
 $ C(t) = A(t) dot B(t) = c_0 + c_1 t + dots + c_n t^n + dots = limits(sum)^(infinity)_(n = 0) c_n t^n $
 
@@ -48,13 +48,13 @@ A(t) dot (B(t) + C(t)) = A(t) B(t) + A(t) C(t)
 $
 
 == Деление производящих функций
-/ Деление производящих функций: Пусть $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$, $B(0) = b_0 eq.not 0$ частным $A(t)$ и $B(t)$ называется $C(t) = (A(t))/(B(t)) space : space A(t) = B(t) C(t)$.
+/ Частным от деления производящих функций: $A(t) = limits(sum)^(infinity)_(n = 0) a_n t^n$ и $B(t) = limits(sum)^(infinity)_(n = 0) b_n t^n$, $B(0) = b_0 eq.not 0$ называется $C(t) = (A(t))/(B(t)) space : space A(t) = B(t) C(t)$.
 
 == Пример
 
-$ A(t) = 1 {1, 0, 0, 0, dots} = {a_0, a_1, a_2, dots} $
+$ A(t) = 1; quad {1, 0, 0, 0, dots} = {a_0, a_1, a_2, dots} $
 
-$ B(t) = 1 - t {1, - 1, 0, 0, dots} = {b_0, b_1, b_2, dots} $
+$ B(t) = 1 - t; quad {1, - 1, 0, 0, dots} = {b_0, b_1, b_2, dots} $
 
 $1/(1 - t)$ --- производящая функция в закрытой форме.
 
