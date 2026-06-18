@@ -18,11 +18,11 @@ $
 	= 1
 	$
 
-2. $m = k: space $ $ space 1/(1 - a x) = 1 + C^1_(k+1) a x + C^2_(k+2) a^2 x^2 + C^3_(k+3) a^3 x^3 + dots + C^n_(k+n) a^n x^n + dots$ --- верно
+2. $m = k: space $ $ space 1/(1 - a x)^k = 1 + C^1_k a x + C^2_(k+1) a^2 x^2 + C^3_(k+2) a^3 x^3 + dots + C^n_(k+n-1) a^n x^n + dots$ --- верно
 
 3. $m = k + 1$
 	$
-  underbrace(frac(1, (1 - a x)^(k + 1)), #[закр. форма]) = underbrace(1 + C_(k + 1)^n a x + C_(k + 2)^2 a^2 x^2 + dots + C_(k + n)^n a^n x^n + dots, #[откр. форма])
+  underbrace(frac(1, (1 - a x)^(k + 1)), #[закр. форма]) = underbrace(1 + C_(k + 1)^1 a x + C_(k + 2)^2 a^2 x^2 + dots + C_(k + n)^n a^n x^n + dots, #[откр. форма])
 	$
 
 	Мы считаем верным утверждение для $m <= k$ и берём его за предположение индукции, теперь нужно доказать справедливость случая $m = k + 1$.
