@@ -7,11 +7,11 @@ forall u, v in V_1 space space (u, v) in alpha_1 <=> (phi(u), phi(v)) in alpha_2
 $
 
 == Теорема об изоморфизме графов.
-Пусть $A$ и $B$ --- матрица смежности $n$-вершинных ографов соответственно $arrow(G) = (U, alpha)$ и $arrow(H) = (V, beta)$. Взаимно однозначное соответствие $phi : U -> V$ тогда и только тогда является изоморфизмом графов $arrow(G)$ и $arrow(H)$, когда для представляющей его матрицы $Phi$ выполняется равенство $A Phi = Phi B$.
+Пусть $A$ и $B$ --- матрицы смежности $n$-вершинных ографов соответственно $arrow(G) = (U, alpha)$ и $arrow(H) = (V, beta)$. Взаимно однозначное соответствие $phi : U -> V$ тогда и только тогда является изоморфизмом графов $arrow(G)$ и $arrow(H)$, когда для представляющей его матрицы $Phi$ выполняется равенство $A Phi = Phi B$.
 
-*Доказательство*
+*Доказательство*:
 
-Пусть $phi$ --- изоморфизм. Предположим, что $v in phi(alpha(u)) => phi^(-1)(v) in alpha(u) => (u, phi^(-1)(v)) in alpha$.
+_Необходимость_: Пусть $phi$ --- изоморфизм. Предположим, что $v in phi(alpha(u)) => phi^(-1)(v) in alpha(u) => (u, phi^(-1)(v)) in alpha$.
 
 Тогда $(u, phi^(-1)(v)) in alpha$.
 
@@ -21,7 +21,7 @@ $
 
 Получаем включение $phi(alpha(u)) subset.eq beta(phi(u))$, так что $phi(alpha(u)) = beta(phi(u)) space forall u in U$.
 
-Пусть теперь $phi(alpha(u)) = beta(phi(u)) space forall u in U$. Докажем $(u_1, u_2) in alpha space <=> space (phi(u_1), phi(u_2)) in beta$.
+_Достаточность_: Пусть теперь $phi(alpha(u)) = beta(phi(u)) space forall u in U$. Докажем $(u_1, u_2) in alpha space <=> space (phi(u_1), phi(u_2)) in beta$.
 
 Если $(u_1, u_2) in alpha$, то $u_2 in alpha(u_1)$, откуда $phi(u_2) in phi(alpha(u_1)) = beta(phi(u_1))$ и значит $(phi(u_1), phi(u_2)) in beta$.
 
