@@ -18,13 +18,16 @@ $
 
 _Необходимость_: Пусть $phi$ --- изоморфизм. Предположим, что $v in phi(alpha(u)) => phi^(-1)(v) in alpha(u) => (u, phi^(-1)(v)) in alpha$.
 
-Тогда $(u, phi^(-1)(v)) in alpha$.
+Так как $phi$ --- изоморфизм, получаем что $(phi(u), v) in beta$, откуда $v in beta(phi(u))$.
 
-Так как $phi$ --- изоморфизм, получаем что $(phi(u), v) in beta$, откуда $v in phi(beta(u))$. Значит $phi(alpha(u)) subset.eq beta(phi(u))$.
+Мы показали, что из предположения $v in phi(alpha(u))$ следует $v in beta(phi(u))$, значит $phi(alpha(u)) subset.eq beta(phi(u))$.
 
 С другой стороны, если $v in beta(phi(u))$, то $(phi(u), v) in beta$, откуда $(u, phi^(- 1) (v)) in alpha$, т.е. $phi^(- 1)(v) in alpha(u)$, и следовательно, $v in phi(alpha(u))$.
 
-Получаем включение $phi(alpha(u)) subset.eq beta(phi(u))$, так что $phi(alpha(u)) = beta(phi(u)) space forall u in U$.
+
+Мы показали, что из предположения $v in beta(phi(u))$ следует $v in phi(alpha(u))$, значит $phi(alpha(u)) supset.eq beta(phi(u))$.
+
+Из приведенных выше фактов следует, что $phi(alpha(u)) = beta(phi(u)) space forall u in U$.
 
 _Достаточность_: Пусть теперь $phi(alpha(u)) = beta(phi(u)) space forall u in U$. Докажем $(u_1, u_2) in alpha space <=> space (phi(u_1), phi(u_2)) in beta$.
 
