@@ -98,7 +98,7 @@
 
 Пусть $G_1 = (V_1, alpha_1)$ и $G_2 = (V_2, alpha_2)$
 
-Объединением графов $G_1$ и $G_2$ называется граф $G_1 union G_2 = (V_1 union V_2, alpha_1 union alpha_2)$
+Объединением графов $G_1$ и $G_2$ называется граф $G_1 union G_2 = (V_1 union V_2, alpha_1 union alpha_2)$.
 
 #let Node(label, position) = (
   label: label,
