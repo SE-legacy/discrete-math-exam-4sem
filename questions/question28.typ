@@ -32,4 +32,4 @@ _Достаточность_: Пусть теперь $phi(alpha(u)) = beta(phi(
 
 С другой стороны, если $(phi(u_1), phi(u_2)) in beta$, то $phi(u_2) in beta(phi(u_1)) = phi(alpha(u_1))$, откуда $u_2 in alpha(u_1)$, т.е. $(u_1, u_2) in alpha$.
 
-Таким образом для $forall u_1, u_2 in U$ истинна эквивалентность $(u_1, u_2) in alpha <=> (phi(u_1), phi(u_2)) in beta$, и, следовательно $phi$ --- изоморфизм.
+Таким образом для $forall u_1, u_2 in U$ истинна эквивалентность $(u_1, u_2) in alpha <=> (phi(u_1), phi(u_2)) in beta$, и, следовательно, $phi$ --- изоморфизм.
