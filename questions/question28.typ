@@ -12,7 +12,7 @@ $
 
 *Доказательство*:
 
-Тождественное равенство $phi(alpha(u)) = beta(phi(u))$ равносильно равенству $alpha phi = phi beta$ для отношени $alpha subset.eq U times U$ и $beta subset.eq V times V$, $phi subset.eq U times V$, в матричной форме имеющего вид $A Phi = Phi B$.
+Тождественное равенство $phi(alpha(u)) = beta(phi(u))$ равносильно равенству $alpha phi = phi beta$ для отношений $alpha subset.eq U times U$ и $beta subset.eq V times V$, $phi subset.eq U times V$, в матричной форме имеющих вид $A Phi = Phi B$.
 
 Покажем, что $phi$ --- изоморфизм $<==>$ $phi(alpha(u)) = beta(phi(u))$ $forall u in U$.
 
