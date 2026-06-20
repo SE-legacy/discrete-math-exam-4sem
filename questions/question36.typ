@@ -15,9 +15,9 @@
 }
 #let nodes_type_1 = nodes_k5
 #for i in range(nodes_type_1_count) {
-  let θ = 55deg - i * 360deg / nodes_type_1_count
-  let x = calc.cos(θ) * (radius - 11mm)
-  let y = calc.sin(θ) * (radius - 11mm)
+  let θ = 15deg - i * 360deg / nodes_type_1_count
+  let x = calc.cos(θ) * (radius - 12.5mm)
+  let y = calc.sin(θ) * (radius - 12.5mm)
   nodes_type_1.push((x, y))
 }
 
@@ -34,15 +34,6 @@
   (3, 4),
 )
 
-#let edges_indices_type_1 = (
-  (0, 1), (0, 4), (0, 5), (0, 9),
-  (1, 2), (1, 5), (1, 6),
-  (2, 3), (2, 6), (2, 7),
-  (3, 4), (3, 8), (3, 7),
-  (4, 8), (4, 9),
-  (9, 5), (5, 6), (6, 7), (7, 8), (8, 9)
-)
-
 #diagram({
   for (i, coord) in nodes_k5.enumerate() {
     let pos = (coord.at(0), coord.at(1))
@@ -55,15 +46,15 @@
   let offset = 60mm
   for (i, coord) in nodes_type_1.enumerate() {
     let pos = (coord.at(0) + offset, coord.at(1))
-    node(pos, none, radius: 2mm, stroke: 1pt, name: label("g2" + str(i)))
+    node(pos, none, radius: 2mm, stroke: 1pt, fill: white, name: label("g2" + str(i)))
   }
-  for (from, to) in edges_indices_type_1 {
+  for (from, to) in edges_indices_k5 {
     edge(label("g2" + str(from)), label("g2" + str(to)))
   }
-  node((offset, -1.3 * radius), [Граф типа I], stroke: none)
+  node((offset, -1.3 * radius), [Произвольный граф типа I], stroke: none)
 })
 
-*Граф типа I* --- граф полученный из графа $K_5$, с добавленными вершинами в точках пересечения ребер.
+*Граф типа I* --- граф полученный из графа $K_5$, с добавленными вершинами на ребрах *не* в точках их пересечения.
 
 #let nodes_k33 = ()
 #for i in range(3) {
@@ -105,7 +96,7 @@
   node((offset + 2cm, -1.1 * radius), [Произвольный граф типа II], stroke: none)
 })
 
-*Граф типа II* --- граф полученный из графа $K_(3,3)$, с добавленными вершинами *не* в точках пересечения ребер.
+*Граф типа II* --- граф полученный из графа $K_(3,3)$, с добавленными вершинами на ребрах *не* в точках их пересечения.
 
 == Теорема (критерий планарости графа)
 
