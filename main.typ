@@ -10,7 +10,7 @@
 	else {
 		include "questions/question" + str(questNumber) + ".typ"
 	}
-	if (questNumber < 46) {
+	if (questNumber < 47) {
 		pagebreak()
 	}
 }
