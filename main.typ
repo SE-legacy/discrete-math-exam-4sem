@@ -3,14 +3,14 @@
 #set heading(numbering: "1.1")
 #generateAll()
 
-#for questNumber in range(1, 47) {
+#for questNumber in range(1, 48) {
 	if (questNumber < 10) {
 		include "questions/question0" + str(questNumber) + ".typ"
 	}
 	else {
 		include "questions/question" + str(questNumber) + ".typ"
 	}
-	if (questNumber < 44) {
+	if (questNumber < 46) {
 		pagebreak()
 	}
 }
