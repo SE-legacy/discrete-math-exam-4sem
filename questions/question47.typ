@@ -32,7 +32,7 @@
 + $B_i (u, v) union (B_j (u, v) union B_k (u, v)) = (B_i (u, v) union B_j (u, v)) union B_k (u, v)$
 + $B union Omicron = B$
 + $B_i (u, v) dot (B_j (v, w) dot B_k (w, t)) = (B_i (u, v) dot B_j (v, w)) dot B_k (w, t)$
-+ $(B_i (u, v) union B_j (u, v)) dot B_k (v, w) = B_i (u, v) dot B_k (v, w) union B_j (u, v) dot B_k (w, t)$
++ $(B_i (u, v) union B_j (u, v)) dot B_k (v, w) = B_i (u, v) dot B_k (v, w) union B_j (u, v) dot B_k (v, w)$
 + $B_i (u, v) dot (B_j (v, w)) union B_k (v, w)) = B_i (u, v) dot B_j (v, w) union B_i (u, v) dot B_k (v, w)$
 
 Пусть дан $arrow(G)(V, rho), V = {v_1, ..., v_n}$. *Матрицей соединений* орграфа $arrow(G)$ будем обозначать матрицу $A$:
